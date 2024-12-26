@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Refine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Refine - Oil Refining Calculator</h1>
+        <div class="form-section">
+            <h2>Input Data</h2>
+            <form id="refineForm">
+                <label for="crudeVolume">Volume Crude Oil (Barrel):</label>
+                <input type="number" id="crudeVolume" required>
+
+                <label for="distillationYield">Distillation Yield (%) :</label>
+                <input type="number" id="distillationYield" required>
+
+                <label for="productionTime">Production Time (Hours):</label>
+                <input type="number" id="productionTime" required>
+
+                <label for="energyUsed">Energy Used (kWh):</label>
+                <input type="number" id="energyUsed" required>
+
+                <button type="button" id="calculateButton">Calculate</button>
+            </form>
+        </div>
+        <div class="result-section">
+            <h2>Results</h2>
+            <p id="distillationResult">Fraction Yield: -</p>
+            <p id="productionRate">Estimated Production Capacity: -</p>
+            <p id="energyEfficiency">Energy Efficiency: -</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
